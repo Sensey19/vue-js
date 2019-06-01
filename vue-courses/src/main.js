@@ -1,7 +1,8 @@
-import '@babel/polyfill'
-import 'mutationobserver-shim'
+import '@babel/polyfill';
+import 'mutationobserver-shim';
 
 import Vue from 'vue';
+import axios from 'axios';
 import './plugins/bootstrap-vue'
 import App from './App.vue';
 import router from './router';
@@ -19,5 +20,6 @@ Vue.component('MainBanner', MainBanner);
 new Vue({
     router,
     store,
+    axios,
     render: h => h(App)
 }).$mount('#app')

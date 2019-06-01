@@ -30,13 +30,15 @@
 </template>
 
 <script>
+    import axios from 'axios';
+
     export default {
         data() {
             return {
                 blocks: [
                     {
-                        title1: ' Man must explore, and this is exploration at its greatest',
-                        title2: ' Man must explore, and this is exploration at its greatest',
+                        title1: 'Man must explore, and this is exploration at its greatest',
+                        title2: 'Man must explore, and this is exploration at its greatest',
                         post: 'Posted by',
                         post2: 'Start Bootstrap',
                         data: 'on September 24, 2019'
@@ -65,6 +67,29 @@
                     }
                 ]
             }
+        },
+        mounted() {
+            axios.post('http://localhost:1337/graphql', {
+                query: `{
+                            posts {
+                                name,
+   	                            homes {
+                                title1
+                                title2
+                                description1
+                                description2
+                                description3
+  	                            }
+                            }
+                        }`
+                })
+                .then(data => {
+                    console.log(data)
+                })
+                .catch(e => {
+                    console.error(e);
+                });
+
         }
     }
 </script>
