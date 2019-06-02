@@ -17,6 +17,14 @@
     "homes": {
       "collection": "home",
       "via": "posts"
+    },
+    "abouts": {
+      "collection": "about",
+      "via": "posts"
+    },
+    "contacts": {
+      "collection": "contact",
+      "via": "posts"
     }
   }
 }

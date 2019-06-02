@@ -1,3 +1,24 @@
+type About {
+  id: ID!
+  created_at: DateTime!
+  updated_at: DateTime!
+  title: String
+  posts(sort: String, limit: Int, start: Int, where: JSON): [Posts]
+}
+
+input AboutInput {
+  title: String
+  posts: [ID]
+}
+
+input createAboutInput {
+  data: AboutInput
+}
+
+type createAboutPayload {
+  about: About
+}
+
 input createHomeInput {
   data: HomeInput
 }
@@ -35,6 +56,14 @@ The `DateTime` scalar represents a date and time following the ISO 8601 standard
 """
 scalar DateTime
 
+input deleteAboutInput {
+  where: InputID
+}
+
+type deleteAboutPayload {
+  about: About
+}
+
 input deleteHomeInput {
   where: InputID
 }
@@ -67,6 +96,11 @@ type deleteUserPayload {
   user: UsersPermissionsUser
 }
 
+input editAboutInput {
+  title: String
+  posts: [ID]
+}
+
 input editFileInput {
   name: String
   hash: String
@@ -92,6 +126,7 @@ input editHomeInput {
 input editPostsInput {
   name: String
   homes: [ID]
+  abouts: [ID]
 }
 
 input editRoleInput {
@@ -159,9 +194,12 @@ scalar JSON
 """The `Long` scalar type represents 52-bit integers"""
 scalar Long
 
-union Morph = UsersPermissionsMe | UsersPermissionsMeRole | Home | createHomePayload | updateHomePayload | deleteHomePayload | Posts | createPostsPayload | updatePostsPayload | deletePostsPayload | UploadFile | UsersPermissionsPermission | UsersPermissionsRole | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsUser | createUserPayload | updateUserPayload | deleteUserPayload
+union Morph = UsersPermissionsMe | UsersPermissionsMeRole | About | createAboutPayload | updateAboutPayload | deleteAboutPayload | Home | createHomePayload | updateHomePayload | deleteHomePayload | Posts | createPostsPayload | updatePostsPayload | deletePostsPayload | UploadFile | UsersPermissionsPermission | UsersPermissionsRole | createRolePayload | updateRolePayload | deleteRolePayload | UsersPermissionsUser | createUserPayload | updateUserPayload | deleteUserPayload
 
 type Mutation {
+  createAbout(input: createAboutInput): createAboutPayload
+  updateAbout(input: updateAboutInput): updateAboutPayload
+  deleteAbout(input: deleteAboutInput): deleteAboutPayload
   createHome(input: createHomeInput): createHomePayload
   updateHome(input: updateHomeInput): updateHomePayload
   deleteHome(input: deleteHomeInput): deleteHomePayload
@@ -195,14 +233,18 @@ type Posts {
   updated_at: DateTime!
   name: String
   homes(sort: String, limit: Int, start: Int, where: JSON): [Home]
+  abouts(sort: String, limit: Int, start: Int, where: JSON): [About]
 }
 
 input PostsInput {
   name: String
   homes: [ID]
+  abouts: [ID]
 }
 
 type Query {
+  about(id: ID!): About
+  abouts(sort: String, limit: Int, start: Int, where: JSON): [About]
   home(id: ID!): Home
   homes(sort: String, limit: Int, start: Int, where: JSON): [Home]
   post(id: ID!): Posts
@@ -225,6 +267,15 @@ input RoleInput {
   type: String
   permissions: [ID]
   users: [ID]
+}
+
+input updateAboutInput {
+  where: InputID
+  data: editAboutInput
+}
+
+type updateAboutPayload {
+  about: About
 }
 
 input updateHomeInput {

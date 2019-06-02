@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f030e495-6a04-4e63-9533-9865bf33f203" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/assets/img/about-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/public/img/about-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/assets/img/contact-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/public/img/contact-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/assets/img/home-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/public/img/home-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/assets/img/post-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/public/img/post-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/assets/img/post-sample-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/public/img/post-sample-image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/components/main_banner/MainBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/src/components/main_banner/MainBanner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-courses/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-cms/api/posts/models/Posts.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-cms/api/posts/models/Posts.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-cms/plugins/graphql/config/generated/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/vue-cms/plugins/graphql/config/generated/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-cms/plugins/users-permissions/config/actions.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-cms/plugins/users-permissions/config/actions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-courses/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/src/views/About.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-courses/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-courses/src/views/home/Home.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +19,12 @@
     <session id="-270942968">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,22 +33,22 @@
           <entry key="html" value="2" />
           <entry key="jpg" value="1" />
           <entry key="js" value="13" />
-          <entry key="json" value="8" />
+          <entry key="json" value="9" />
           <entry key="md" value="1" />
           <entry key="scss" value="16" />
-          <entry key="vue" value="25" />
+          <entry key="vue" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="8" />
+          <entry key="JSON" value="9" />
           <entry key="JavaScript" value="13" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="16" />
-          <entry key="Vue.js" value="25" />
+          <entry key="Vue.js" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -61,7 +56,7 @@
           <entry key="js" value="225" />
           <entry key="json" value="3" />
           <entry key="scss" value="39" />
-          <entry key="vue" value="1028" />
+          <entry key="vue" value="1283" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -69,7 +64,7 @@
           <entry key="JSON" value="3" />
           <entry key="JavaScript" value="225" />
           <entry key="SCSS" value="39" />
-          <entry key="Vue.js" value="1028" />
+          <entry key="Vue.js" value="1283" />
         </counts>
       </usages-collector>
     </session>
@@ -100,17 +95,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-courses/src/views/home/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+            <state relative-caret-position="295">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/vue-courses/src/views/Contact.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="315">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-cms/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -144,17 +148,17 @@
         <option value="$PROJECT_DIR$/vue-courses/src/components/footer/Footer.vue" />
         <option value="$PROJECT_DIR$/vue-courses/src/assets/scss/_navbar.scss" />
         <option value="$PROJECT_DIR$/vue-courses/src/assets/scss/_global.scss" />
-        <option value="$PROJECT_DIR$/vue-courses/src/views/About.vue" />
         <option value="$PROJECT_DIR$/vue-courses/src/views/SamplePost.vue" />
         <option value="$PROJECT_DIR$/vue-courses/src/components/header/Header.vue" />
-        <option value="$PROJECT_DIR$/vue-courses/src/views/Contact.vue" />
         <option value="$PROJECT_DIR$/vue-courses/src/App.vue" />
         <option value="$PROJECT_DIR$/vue-courses/src/router.js" />
         <option value="$PROJECT_DIR$/vue-courses/src/main.js" />
         <option value="$PROJECT_DIR$/vue-courses/src/components/main_banner/MainBanner.vue" />
         <option value="$PROJECT_DIR$/cms/config/hook.json" />
-        <option value="$PROJECT_DIR$/vue-courses/src/views/home/Home.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/vue-courses/src/views/About.vue" />
+        <option value="$PROJECT_DIR$/vue-courses/src/views/home/Home.vue" />
+        <option value="$PROJECT_DIR$/vue-courses/src/views/Contact.vue" />
       </list>
     </option>
   </component>
@@ -411,6 +415,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -421,13 +426,30 @@
             <path>
               <item name="vue-js" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-js" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js" type="462c0819:PsiDirectoryNode" />
               <item name="vue-courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-courses" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-js" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-courses" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,7 +482,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="serve" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/vue-courses/package.json" />
       <command value="run" />
@@ -471,8 +493,47 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="setup" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-cms/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="setup" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-cms/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="strapi" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/vue-cms/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="strapi" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.serve" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.strapi" />
+      <item itemvalue="npm.setup" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.setup" />
+        <item itemvalue="npm.strapi" />
         <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
@@ -489,18 +550,19 @@
       <updated>1558778961855</updated>
       <workItem from="1558778966990" duration="12815000" />
       <workItem from="1559373874286" duration="3819000" />
-      <workItem from="1559378291996" duration="14230000" />
+      <workItem from="1559378291996" duration="14755000" />
+      <workItem from="1559489901525" duration="4578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30864000" />
+    <option name="totallyTimeSpent" value="35967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -513,7 +575,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3298731" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -619,26 +681,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2388" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/admin/controllers/Admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-733" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="51">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/public/index.html" />
+    <entry file="file://$PROJECT_DIR$/cms/admin/controllers/Admin.js" />
+    <entry file="file://$PROJECT_DIR$/cms/README.md" />
     <entry file="file://$PROJECT_DIR$/vue-courses/src/components/header/Header.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -651,6 +696,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-courses/public/img/about-bg.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-courses/src/components/main_banner/MainBanner.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-courses/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cms/server.js" />
+    <entry file="file://$PROJECT_DIR$/cms/config/hook.json" />
+    <entry file="file://$PROJECT_DIR$/cms/package.json" />
+    <entry file="file://$PROJECT_DIR$/vue-courses/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-courses/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -669,17 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-courses/src/components/main_banner/MainBanner.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-courses/src/views/About.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -690,58 +759,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-courses/src/main.js">
+    <entry file="file://$PROJECT_DIR$/vue-courses/src/views/home/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="295">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cms/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/config/hook.json">
+    <entry file="file://$PROJECT_DIR$/vue-cms/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-courses/src/views/Contact.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-courses/src/views/home/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="88" column="29" lean-forward="true" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-courses/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="315">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
         </state>
       </provider>
     </entry>

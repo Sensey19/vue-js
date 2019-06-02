@@ -12,9 +12,9 @@
                                 {{block.title2}}
                             </h3>
                         </a>
-                        <p class="post-meta">{{block.post1}}
-                            <a href="#">{{block.post2}}</a>
-                            {{block.data}}</p>
+                        <p class="post-meta">{{block. description1}}
+                            <a href="#">{{block. description2}}</a>
+                            {{block. description3}}</p>
                     </div>
                     <hr>
 
@@ -35,37 +35,7 @@
     export default {
         data() {
             return {
-                blocks: [
-                    {
-                        title1: 'Man must explore, and this is exploration at its greatest',
-                        title2: 'Man must explore, and this is exploration at its greatest',
-                        post: 'Posted by',
-                        post2: 'Start Bootstrap',
-                        data: 'on September 24, 2019'
-                    },
-                    {
-                        title1: 'I believe every human has a finite number of heartbeats. I don\'t intend to waste any of\n' +
-                            '                                mine.',
-                        post: 'Posted by',
-                        post2: 'Start Bootstrap',
-                        data: 'on September 18, 2019'
-                    },
-                    {
-                        title1: 'Science has not yet mastered prophecy',
-                        title2: 'We predict too much for the next year and yet far too little for the next ten.',
-                        post: 'Posted by',
-                        post2: 'Start Bootstrap',
-                        data: 'on August 24, 2019'
-                    },
-                    {
-                        title1: 'Failure is not an option',
-                        title2: 'Many say exploration is part of our destiny, but it’s actually our duty to future\n' +
-                            '                                generations.',
-                        post: 'Posted by',
-                        post2: 'Start Bootstrap',
-                        data: 'on July 8, 2019'
-                    }
-                ]
+                blocks: []
             }
         },
         mounted() {
@@ -83,8 +53,9 @@
                             }
                         }`
                 })
-                .then(data => {
-                    console.log(data)
+                .then(res => {
+                    const {data} = res;
+                    this.blocks = data.data.posts[0].homes;
                 })
                 .catch(e => {
                     console.error(e);
