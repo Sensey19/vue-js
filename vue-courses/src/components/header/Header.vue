@@ -22,6 +22,14 @@
                     <li class="nav-item">
                         <router-link to="/contact">Contact</router-link>
                     </li>
+
+
+                    <li v-if="!show" class="nav-item">
+                        <router-link to="/login">Login</router-link>
+                    </li>
+                    <li v-else class="nav-item">
+                        <router-link to="/profile">Profile</router-link>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -29,8 +37,17 @@
 </template>
 
 <script>
-    export default {
+    import {mapState} from 'vuex';
 
+    export default {
+        data() {
+            return {}
+        },
+        computed: {
+            ...mapState({
+                show: state => state.loginShow
+            })
+        },
     }
 </script>
 

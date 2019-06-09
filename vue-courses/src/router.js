@@ -48,6 +48,16 @@ export default new Router({
                 subheading: 'Have questions? I have answers.',
                 img: 'img/contact-bg.jpg'
             }
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: () => import('./views/Login.vue'),
+        },
+        {
+            path: '/profile',
+            name: 'profile',
+            component: () => import('./components/profile/Profile.vue'),
         }
     ]
 })
