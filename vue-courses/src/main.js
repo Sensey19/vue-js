@@ -10,12 +10,14 @@ import store from './store';
 import Header from '@/components/header/Header.vue';
 import Footer from '@/components/footer/Footer.vue';
 import MainBanner from '@/components/main_banner/MainBanner.vue';
+import Buttons from '@/components/buttons/Buttons.vue';
 
 Vue.config.productionTip = false;
 
 Vue.component('HeaderComponent', Header);
 Vue.component('FooterComponent', Footer);
 Vue.component('MainBanner', MainBanner);
+Vue.component('Buttons', Buttons);
 
 new Vue({
     router,

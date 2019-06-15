@@ -55,6 +55,11 @@ export default new Router({
             component: () => import('./views/Login.vue'),
         },
         {
+            path: '/register',
+            name: 'register',
+            component: () => import('./components/register/Register.vue'),
+        },
+        {
             path: '/profile',
             name: 'profile',
             component: () => import('./components/profile/Profile.vue'),

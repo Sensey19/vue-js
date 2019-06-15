@@ -14,7 +14,11 @@
 
 <script>
     export default {
-
+        created() {
+            const vm = this;
+            const jwt = localStorage.token;
+            vm.$store.dispatch('jwtChecking', jwt);
+        }
     }
 </script>
 

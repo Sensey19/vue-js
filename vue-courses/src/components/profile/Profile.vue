@@ -1,23 +1,28 @@
 <template>
     <div class="login-success">
-        <h4 class="login-success_title">Hello {{name}}!</h4>
+        <h4 class="login-success_title">Hello {{user.username}}!</h4>
         <button @click="logOut" class="login-success_btn">Log out</button>
     </div>
 </template>
 
 <script>
+    import {mapState} from 'vuex';
+
     export default {
         data() {
-            return {
-                name: this.$store.state.user[0].name
-            }
+            return {}
+        },
+        computed: {
+            ...mapState({
+                user: state => state.user
+            })
         },
         methods: {
             logOut() {
-                this.$router.push("/");
-                setTimeout(() => {
-                    window.location.reload(true);
-                }, 1000);
+                this.$store.dispatch('logout')
+                    .then(() => {
+                        this.$router.push('/login');
+                    })
             }
         }
     }

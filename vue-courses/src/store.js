@@ -1,30 +1,64 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-
-const ADD_USER = 'ADD_USER';
-const LOGIN_SHOW = 'LOGIN_SHOW';
+import axios from 'axios';
 
 Vue.use(Vuex)
-
 export default new Vuex.Store({
     state: {
-        user: [],
-        loginShow: false
+        user: null,
+        token: localStorage.getItem('token') || ''
     },
     mutations: {
-        [ADD_USER](state, user) {
+        auth(state, token, user) {
+            state.token = token;
             state.user = user;
         },
-        [LOGIN_SHOW](state, bool) {
-            state.loginShow = bool;
-        }
+        me(state, user) {
+            state.user = user;
+        },
+        logout(state) {
+            state.token = '';
+        },
     },
     actions: {
-        addUser({commit}, payload) {
-            commit(ADD_USER, payload);
+        login({commit}, user) {
+            axios.post('http://localhost:1337/auth/local', user)
+                .then(res => {
+                    const token = res.data.jwt;
+
+                    localStorage.setItem('token', token);
+                    commit('auth', token, res.data.user);
+                })
+                .catch(e => console.log(e))
+
         },
-        loginShow({commit}, payload) {
-            commit(LOGIN_SHOW, payload);
+        register({commit}, user) {
+            axios.post('http://localhost:1337/auth/local/register', user)
+                .then(res => {
+                    const token = res.data.jwt;
+
+                    localStorage.setItem('token', token);
+                    commit('auth', token, res.data.user);
+                })
+                .catch(e => console.log(e))
+        },
+        jwtChecking({commit}, token) {
+            axios.get('http://localhost:1337/users/me', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+                .then(res => {
+                    commit('me', res.data);
+                })
+                .catch(e => console.log(e))
+        },
+        logout({commit}) {
+            commit('logout');
+            localStorage.removeItem('token');
         }
+    },
+    getters: {
+        loginSuccess: state => !!state.token
     }
 })

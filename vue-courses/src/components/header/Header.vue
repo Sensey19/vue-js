@@ -24,7 +24,7 @@
                     </li>
 
 
-                    <li v-if="!show" class="nav-item">
+                    <li v-if="!loginSuccess" class="nav-item">
                         <router-link to="/login">Login</router-link>
                     </li>
                     <li v-else class="nav-item">
@@ -37,16 +37,12 @@
 </template>
 
 <script>
-    import {mapState} from 'vuex';
-
     export default {
         data() {
             return {}
         },
         computed: {
-            ...mapState({
-                show: state => state.loginShow
-            })
+            loginSuccess : function(){ return this.$store.getters.loginSuccess}
         },
     }
 </script>

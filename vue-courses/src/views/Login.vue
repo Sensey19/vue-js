@@ -1,23 +1,20 @@
 <template>
     <div>
-        <authorization v-if="!show"></authorization>
-        <profile v-else></profile>
+        <authorization v-if="$route.path === '/login'"></authorization>
+        <register v-if="$route.path === '/register'"></register>
+        <profile v-if="$route.path === '/profile'"></profile>
     </div>
 </template>
 
 <script>
     import Authorization from '../components/login/Authorization';
+    import Register from '../components/register/Register';
     import Profile from '../components/profile/Profile';
-    import {mapState} from 'vuex';
 
     export default {
-        computed: {
-            ...mapState({
-                show: state => state.loginShow
-            })
-        },
         components: {
             Authorization,
+            Register,
             Profile
         }
     }
