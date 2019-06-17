@@ -41,7 +41,11 @@
                 }
 
                 vm.$store.dispatch('register', data)
-                    .then(() => {
+                    .then(res => {
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+
                         vm.$router.push('/');
                     })
                     .catch(e => console.log(e))

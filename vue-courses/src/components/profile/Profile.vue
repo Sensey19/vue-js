@@ -15,6 +15,9 @@
         computed: {
             ...mapState({
                 user: state => state.user
+                // user буде лише, коли відправити ріквест на me
+                // user буде лише, коли відправити ріквест на me
+                // user буде лише, коли відправити ріквест на me
             })
         },
         methods: {

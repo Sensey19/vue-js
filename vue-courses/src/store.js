@@ -25,6 +25,9 @@ export default new Vuex.Store({
             axios.post('http://localhost:1337/auth/local', user)
                 .then(res => {
                     const token = res.data.jwt;
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
 
                     localStorage.setItem('token', token);
                     commit('auth', token, res.data.user);
@@ -36,6 +39,9 @@ export default new Vuex.Store({
             axios.post('http://localhost:1337/auth/local/register', user)
                 .then(res => {
                     const token = res.data.jwt;
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
+                    // не приходить res.data.user !!!!!!!!!!!!!!!!!!
 
                     localStorage.setItem('token', token);
                     commit('auth', token, res.data.user);

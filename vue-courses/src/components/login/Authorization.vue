@@ -31,7 +31,13 @@
                 let identifier = vm.email;
                 let password = vm.password;
                 vm.$store.dispatch('login', {identifier, password})
-                    .then(() => vm.$router.push('/'))
+                    .then(res => {
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+                        // не приходить res !!!!!!!!!!!!!!!!!!
+
+                        vm.$router.push('/');
+                    })
                     .catch(e => console.log(e))
             }
         }
